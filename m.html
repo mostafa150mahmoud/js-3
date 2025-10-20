@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+  <link rel="stylesheet" href="b.css">
+
+</head>
+<body>
+
+  <div class="container py-5">
+    <h1 class="text-center">Bookmarker</h1>
+    <div class="bookmark-body my-4 p-4">
+      <h2><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+
+      <div class="form-group mb-3">
+        <label for="bookmarkName"><i class="fa-solid fa-book"></i> Site Name</label>
+        <input type="text" id="bookmarkName" placeholder="Bookmark Name" class="form-control">
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="bookmarkURL"><i class="fa-solid fa-link"></i> Site URL</label>
+        <input type="text" id="bookmarkURL" placeholder="Website URL" class="form-control">
+      </div>
+
+      <button id="submitBtn" class="btn">Submit</button>
+    </div>
+
+    <table class="table" id="bookmarkTable">
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tableContent"></tbody>
+    </table>
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
